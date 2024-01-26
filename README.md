@@ -11,3 +11,4 @@ Lista de notebooks:
 - 07 Algortimo de Bernstein-Vazirani
 - 08 Algoritmo de Simon
 - 09 Algoritmo de Grover
+- 10 Quantum Fourier Transform
