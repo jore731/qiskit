@@ -1,4 +1,4 @@
-# qiskitrepo
+# qiskit repo
 
 Lista de notebooks:
 - 00 Entorno de programacion
