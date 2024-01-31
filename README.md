@@ -12,3 +12,7 @@ Lista de notebooks:
 - 08 Algoritmo de Simon
 - 09 Algoritmo de Grover
 - 10 Quantum Fourier Transform
+- 11 Quantum Phase Estimation
+- 12 Shor
+- 13 Primitivas Runtime
+- 14 Algoritmos Variacionales
