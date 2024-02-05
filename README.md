@@ -16,3 +16,4 @@ Lista de notebooks:
 - 12 Shor
 - 13 Primitivas Runtime
 - 14 Algoritmos Variacionales
+- 15 Caso practico optimizacion
