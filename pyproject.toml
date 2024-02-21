@@ -12,6 +12,7 @@ pylatexenc = "^2.10"
 qiskit-ibmq-provider = "^0.20.2"
 ipykernel = "^6.29.2"
 python-dotenv = "^1.0.1"
+qiskit-aer = "^0.13.3"
 
 
 [build-system]
