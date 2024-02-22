@@ -9,10 +9,14 @@ readme = "README.md"
 python = "^3.10"
 qiskit = {extras = ["visualization"], version = "^0.46.0"}
 pylatexenc = "^2.10"
-qiskit-ibmq-provider = "^0.20.2"
+qiskit-ibmq-provider = {extras = ["visualization"], version = "^0.20.2"}
 ipykernel = "^6.29.2"
 python-dotenv = "^1.0.1"
 qiskit-aer = "^0.13.3"
+qiskit-ibm-provider = "^0.10.0"
+qiskit-ibm-runtime = "^0.20.0"
+tweedledum = "^1.1.1"
+qiskit-algorithms = "^0.3.0"
 
 
 [build-system]
