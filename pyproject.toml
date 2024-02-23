@@ -17,6 +17,7 @@ qiskit-ibm-provider = "^0.10.0"
 qiskit-ibm-runtime = "^0.20.0"
 tweedledum = "^1.1.1"
 qiskit-algorithms = "^0.3.0"
+loguru = "^0.7.2"
 
 
 [build-system]
