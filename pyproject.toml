@@ -19,6 +19,7 @@ tweedledum = "^1.1.1"
 qiskit-algorithms = "^0.3.0"
 loguru = "^0.7.2"
 poetry-plugin-dotenv = "^0.6.17"
+qiskit-optimization = "^0.6.0"
 
 
 [build-system]

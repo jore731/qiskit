@@ -697,6 +697,19 @@ files = [
 ]
 
 [[package]]
+name = "docplex"
+version = "2.25.236"
+description = "The IBM Decision Optimization CPLEX Modeling for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "docplex-2.25.236.tar.gz", hash = "sha256:256914b4c0113a4e1c78f32ea20c7d76dc8efe286fe890270e75cfad50fe510f"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "dulwich"
 version = "0.21.7"
 description = "Python Git Library"
@@ -2029,6 +2042,24 @@ files = [
 ]
 
 [[package]]
+name = "networkx"
+version = "3.2.1"
+description = "Python package for creating and manipulating graphs and networks"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "networkx-3.2.1-py3-none-any.whl", hash = "sha256:f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2"},
+    {file = "networkx-3.2.1.tar.gz", hash = "sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6"},
+]
+
+[package.extras]
+default = ["matplotlib (>=3.5)", "numpy (>=1.22)", "pandas (>=1.4)", "scipy (>=1.9,!=1.11.0,!=1.11.1)"]
+developer = ["changelist (==0.4)", "mypy (>=1.1)", "pre-commit (>=3.2)", "rtoml"]
+doc = ["nb2plots (>=0.7)", "nbconvert (<7.9)", "numpydoc (>=1.6)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.14)", "sphinx (>=7)", "sphinx-gallery (>=0.14)", "texext (>=0.6.7)"]
+extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.11)", "sympy (>=1.10)"]
+test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
+
+[[package]]
 name = "notebook"
 version = "7.1.0"
 description = "Jupyter Notebook - A web-based notebook environment for interactive computing"
@@ -3177,6 +3208,32 @@ websockets = {version = ">=10.0", markers = "python_version >= \"3.7\""}
 visualization = ["ipython (>=5.0.0)", "ipyvue (>=1.4.1)", "ipyvuetify (>=1.1)", "ipywidgets (<=7.7.2)", "matplotlib (>=2.1)", "plotly (>=4.4)", "pyperclip (>=1.7)", "seaborn (>=0.9.0)", "traitlets (!=5.0.5)"]
 
 [[package]]
+name = "qiskit-optimization"
+version = "0.6.0"
+description = "Qiskit Optimization: A library for optimization applications using quantum computing"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "qiskit-optimization-0.6.0.tar.gz", hash = "sha256:a37816ec5dbd7d3048b2f6c6d77c3e0eb8af0aa3ede3ff0f1b7dd0e7648ab4f0"},
+    {file = "qiskit_optimization-0.6.0-py3-none-any.whl", hash = "sha256:9e560cac6f9e63089fe4ec98253a47553aa698f32cc67a3c64dc8ca841f302d1"},
+]
+
+[package.dependencies]
+docplex = ">=2.21.207,<2.24.231 || >2.24.231"
+networkx = ">=2.6.3"
+numpy = ">=1.17"
+qiskit = ">=0.44"
+qiskit-algorithms = ">=0.2.0"
+scipy = ">=1.9.0"
+setuptools = ">=40.1.0"
+
+[package.extras]
+cplex = ["cplex"]
+cvx = ["cvxpy"]
+gurobi = ["gurobipy"]
+matplotlib = ["matplotlib"]
+
+[[package]]
 name = "qiskit-terra"
 version = "0.46.0"
 description = "Software for developing quantum computing programs"
@@ -3695,6 +3752,22 @@ files = [
 nativelib = ["pyobjc-framework-Cocoa", "pywin32"]
 objc = ["pyobjc-framework-Cocoa"]
 win32 = ["pywin32"]
+
+[[package]]
+name = "setuptools"
+version = "69.1.1"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "setuptools-69.1.1-py3-none-any.whl", hash = "sha256:02fa291a0471b3a18b2b2481ed902af520c69e8ae0919c13da936542754b4c56"},
+    {file = "setuptools-69.1.1.tar.gz", hash = "sha256:5c0806c7d9af348e6dd3777b4f4dbb42c7ad85b190104837488eab9a7c945cf8"},
+]
+
+[package.extras]
+docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
+testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pip (>=19.1)", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
+testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "shellingham"
@@ -4352,4 +4425,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7351a618b9942c5bdc32e606a3d5a1628eab990f28e491e5f42358f427bf52b8"
+content-hash = "b9e079bc1132edfba3b9b1d13b1b30a9ded84080464e419524440ac5ca594c2c"
